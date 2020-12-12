@@ -20,18 +20,28 @@
 
         <h1>{{ title }}</h1>
         <h2>{{promo}}</h2>
-        <p class="title">{{product.name}}</p>
+        <div class="col-md-6">
+          <div class="thumbnail">
+          <img src="img/ninja code.jpg" width="120px"/>
+        <p class="title">{{product.name |   uppercase}}</p>
         <p class="price">{{product.price | currency }}</p>
+        <p class="date">{{product.pubdate | date}}</p>
+        <!--|date is a filter that formats numbersin a date.  
+        |currency is a filter to filter numbers into money.
+        |uppercase is a flter to filter words into upper case.
+        -->
 
       </div>
     </div>
+  </div>
+</div>
+
 
     <div class="footer">
       <div class="container">
         <h2>Available for iPhone and Android.</h2>
-        <img src="the-code-of-the-samurai.jpg" width="120px"/>
-        <img src="ninja code.jpg" width="110px"/>
-        <img src="ninja code.jpg">
+        <img src="https://content.codecademy.com/projects/shutterbugg/app-store.png" width="120px" />
+        <img src="https://content.codecademy.com/projects/shutterbugg/google-play.png" width="110px" />
       </div>
     </div>
 

@@ -1,10 +1,10 @@
 app.controller('MainController',['$scope', function($scope) {
-    $scope.title = 'The Samuria Code';
-    $scope.promo = 'Honor, Courage, Honesty';
+    $scope.title = 'Best Sellers'
+    $scope.promo = 'The Warrior Collection';
     $scope.product = {
         name: 'The Ninja Code',
         price: 19,
-        pubdate: new Date('2020', '03','08')
+        pubdate: new Date('2014', '03','08')
     }
     }]);
 
@@ -14,7 +14,7 @@ app.controller('MainController',['$scope', function($scope) {
 
     //{{product.name}} will access the name of the product in view (index.html) which is 'The Ninja Code'
     //{{product.price}} will access the price of the product in view (index.html) which is 19
-    // Adding | currency at the end of a $scope.object if its a number will turn that number into currency ex. {{product.price |currency }} = $19.00 
+    // Adding | currency at the end of a $scope.property.object if its a number will turn that number into currency ex. {{product.price |currency }} = $19.00 
     
     
     //Filters II
